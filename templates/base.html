@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask Web Scraper</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta http-equiv="Cache-control" content="no-cache">
+    <link rel="shortcut icon" href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/271/bar-chart_1f4ca.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='uikit.min.css')}}">
+    <script type="text/javascript" src="{{url_for('static', filename='uikit.min.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='uikit-icons.min.js')}}"></script>
+</head>
+<body class="uk-margin-large-bottom">
+<div class="uk-container uk-container-large">
+    {% block main %}
+    {% endblock %}
+</div>
+</body>
+</html>
